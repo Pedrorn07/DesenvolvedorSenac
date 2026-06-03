@@ -46,6 +46,14 @@ COMANDOS:
 
  <!-- É importante na primeira vez que o github esteja logado, pois o sistema vai precisar dar permissão -->
 
+ ## 2. DESCONECTAR USUÁRIO
+ COMANDOS:
+ Git --local --unset user.name
+ <!-- Utiliza-se para remover o nome de usuário ja logado no VSCode -->
+
+ Git --local --unset user.email
+ <!-- Utiliza-se para remover o email de usuário ja logado no VSCode -->
+
 ## PARA ENVIAR PARA O REPOSITÓRIO
 
 DIGITE:
