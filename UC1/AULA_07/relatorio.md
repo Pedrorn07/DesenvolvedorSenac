@@ -8,3 +8,5 @@
 <!-- Passo 2: Processar -->
  Caracteristicas: clareza, ordem e resultado esperado. 
 <!-- Fim: Resultado -->
+
+<!-- Alt + seta pra baixo desce a informação -->
