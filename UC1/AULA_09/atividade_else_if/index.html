@@ -1,0 +1,33 @@
+<script>
+
+    let nome = prompt("Digite seu nome ")
+    if (nome !== "" && nome != null) {
+
+        while (nome !== null && nome !== "") {
+            let media = prompt("Digite sua média " + nome);
+            let valormedia = Number(media);
+            if (Number.isFinite(valormedia)) {
+
+                if (valormedia > 10) {
+                    alert("Esse número não se enccaixa nos parametros")
+                } else {
+                    if (valormedia >= 7) {
+                        alert("Aluno aprovado")
+                        
+                    } else if (valormedia >=4 ) {
+                        
+                    } else {
+                        
+                    }
+                    
+                    
+                }
+
+            }
+
+        }
+
+    } else {
+
+    }
+</Script>
