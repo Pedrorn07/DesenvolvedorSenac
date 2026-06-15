@@ -1,0 +1,34 @@
+<script>
+    let idade = Number(prompt("Digite sua idade"))
+    let i = 0;
+    while (idade !== 0) {
+
+
+        if (isFinite(idade) && idade !== 0 && idade !== "") {
+            if (idade < 0) {
+                alert(`${idade}\nIdade invalida`)
+
+            } else if (idade < 12) {
+                alert(`${idade}\nCriança`)
+
+            } else if (idade < 18) {
+                alert(`${idade}\nAdolescente`)
+
+            } else if (idade < 60) {
+                alert(`${idade}\nAdulto`)
+
+            } else {
+                alert(`${idade}\nIdoso`)
+
+            }
+
+        } else {
+            alert("error")
+i++        
+        }
+
+   
+        idade = Number(prompt("Digite sua idade novamente"))
+    }
+    alert("Operação cancelada"+idade)
+</script>

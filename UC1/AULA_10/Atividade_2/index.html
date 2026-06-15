@@ -1,0 +1,32 @@
+<script>
+
+    let media = (prompt("Digite sua media"));
+
+
+    while (media !== null  && media !== "") {
+        let medianum = Number(media)
+        if (isFinite(medianum)) {
+            if (medianum < 0 || medianum > 10) {
+                alert(`${medianum}\nInvalida`)
+
+            } else if (medianum >= 7) {
+                alert(`${medianum}\nAprovado`)
+
+            } else if (medianum >= 5) {
+                alert(`${medianum}\nRecuperação`)
+
+            } else {
+                alert(`${medianum}\nReprovado`)
+
+            }
+
+        }
+
+        medianum = ""
+        media = prompt("Digite a nova media");
+
+    }
+
+    alert("Operação cancelada")
+
+</script>
