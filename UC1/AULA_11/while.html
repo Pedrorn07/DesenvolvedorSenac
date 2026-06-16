@@ -1,0 +1,32 @@
+<script>
+
+    let teste = prompt("Digite qualquer coisa");
+    let contador = 0;
+    while (teste !== null) {
+        contador++
+
+        if (contador < 3) {
+            alert(`
+REGISTRADOR DE DADOS
+=======================
+DADO DIGITADO: ${teste}
+CONTAGEM: ${contador}
+`)
+
+
+        } else {
+            alert(`
+REGISTRADOR DE DADOS
+=======================
+DADO DIGITADO: ${teste}
+CONTAGEM: ${contador}
+OPS! VOCÊ CHEGOU AO SEU LIMITE
+AÇÂO SERA CANCELADA
+`)
+            break
+        }
+
+        teste = prompt("Digite qualquer coisa");
+    }
+
+</script>
