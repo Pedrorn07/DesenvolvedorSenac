@@ -1,0 +1,36 @@
+<script>
+
+    let nomes = [
+        "Paula lins",
+        "José iêdo",
+        "Francisco artênio",
+        "Francisca lins"
+    ]
+
+    let option = Number(prompt("Selecione um cliente (Digite o código)"));
+
+    while (option !== 0) {
+        let novonum = option - 1
+
+        if (!isFinite(novonum)) {
+            alert("Não é um numero")
+
+        } else if (novonum < 0 || option > nomes.length) {
+            alert("Dados inconsistentes")
+
+        } else {
+
+            alert(`
+            DADOS DO USUARIO
+            \n===========================
+            VOCE SELECIONOU:
+            nome: ${nomes[novonum]}
+            `)
+
+        }
+
+        option = Number(prompt("Selecione um cliente (Digite o código)"));
+    }
+
+    alert("Operação cancelada")
+</script>
