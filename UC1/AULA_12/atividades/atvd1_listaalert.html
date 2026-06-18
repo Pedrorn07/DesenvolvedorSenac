@@ -1,9 +1,33 @@
 <script>
 
+    let PG = [
+        "Pythom",
+        "Javascript",
+        "C++",
+        "Html",
+        "java"
+    ]
+
+    let tamanho = PG.length;
+    let i = 0;
+
+    console.log(`LISTA DE PROGRAMAS\n`)
+
+    let conteudo = "Dados da lista de PG:\n";
+
+    // console.log(conteudo)
+
+    for (i; i < tamanho; i++) {
+
+        conteudo += `${i+1}. NOME: ${PG[i]}\n`
+        // Ao colocar +1 no codigo de `${i}. NOME: ${PG[i]}\n`
+        // ele soma 0 + 1 e Retira o inicio de codigo com 0
+        //  {conteudo += `${i+1}. NOME: ${PG[i]}\n`}
+        // {conteudo += `${i+1}. NOME: ${[i]}\n`}
+    }
+    console.log(conteudo)
+    alert(conteudo)
 
 
 
-
-
-    
 </script>
