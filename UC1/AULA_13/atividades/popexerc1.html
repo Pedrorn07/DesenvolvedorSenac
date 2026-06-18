@@ -1,0 +1,26 @@
+<script>
+
+    let lista = [
+        " 12,50$",
+        " 1,50$",
+        " 100,00$",
+        " 77,15$",
+        " 9,50$",
+        " 10,00$"
+    ]
+    while (lista.length > 0) {
+        let resultado = 'LISTA DE DINHEIRO:\n';
+        let tamanho = lista.length;
+        for (i = 0; i < tamanho; i++) {
+            resultado += `${i + 1}.${lista[i]}\n`
+        }
+        let confirmar = confirm(resultado + "DESEJA EXCLUIR O ÚLTIMO PREÇO?")
+        if (confirmar) {
+            lista.pop();
+        } else {
+            alert("operação cancelada")
+            break
+        }
+    }
+    alert("lista vazia")
+</script>

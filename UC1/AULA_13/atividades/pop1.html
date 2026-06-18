@@ -1,0 +1,26 @@
+<script>
+
+    let lista = [
+        "BRASIL",
+        "MARROCOS",
+        "HAITI",
+        "ESCOCIA"
+    ]
+    let confirmar = confirm("DESEJA EXCLUIR O ÚLTIMO ÍTEM DA LISTA?")
+    while (lista.length > 0) {
+        if (confirmar) {
+            lista.pop();
+            let resultado = 'LISTA DE PAISES:\n';
+            let tamanho = lista.length;
+            for (i = 0; i < tamanho; i++) {
+                resultado += `${i + 1}.${lista[i]}\n`
+            }
+            alert(resultado)
+        }
+        if (lista.length > 0) {
+            confirmar = confirm("DESEJA EXCLUIR O ÚLTIMO ÍTEM DA LISTA?")
+        } else {
+            alert("lista vazia")
+        }
+    }
+</script>
