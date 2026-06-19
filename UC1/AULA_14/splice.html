@@ -1,0 +1,21 @@
+<script>
+
+    let nomes = ["pedro", "jose", "maria", "guilherme", "ricardo"]
+    let exibirdados = ""
+    nomes.forEach(function (nome, i) {
+        exibirdados += `${i + 1}.${nome}\n`
+    })
+    let numeros = Number(prompt(exibirdados + "DIGITE UM CODIGO PARA EXCLUIR"));
+    while (numeros !== 0) {
+        nomes.splice(numeros - 1, 1)
+        let resultado = "Lista de usuários:\n"
+        nomes.forEach(function (nome, i) {
+            resultado += `${i + 1}.${nome}\n`
+        })
+        alert(resultado)
+        numeros = Number(prompt(resultado + "DIGITE UM CODIGO PARA EXCLUIR"));
+    }
+
+
+
+</script>

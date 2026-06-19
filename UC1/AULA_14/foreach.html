@@ -1,0 +1,27 @@
+<script>
+
+    let Computer = [
+        "COMPUTADORES",
+        "TECLADOS",
+        "MONITORES",
+        "MOUSES"
+    ]
+    let icones = [
+        // windos + poonto, para adiconar os icones no sistema de programador.
+        "💻",
+        "⌨️",
+        "🖥️",
+        "🖱️"
+    ]
+    let resultado = "lista de informações:\n"
+
+    Computer.forEach(function (computers, i) {
+        console.log(computers);
+        resultado += `${icones[i]}.${i + 1}.${computers}\n`
+    });
+    // ATENÇÂO: o `${i+1}` que voce coloca no codigo de `${i}` e pra ser uma numeração de ordem
+    // para não começar de (0, 1, 2, 3) e sim de (1, 2, 3, 4) pois ele some (0+1) 
+    alert(resultado)
+
+
+</script>
