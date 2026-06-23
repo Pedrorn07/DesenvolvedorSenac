@@ -1,0 +1,43 @@
+<script>
+
+    let nomes = [
+        "paulo lins",
+        "jose iedo",
+        "joao paulo",
+        "ryan",
+        "ronaldo"
+    ]
+    let paises = [
+        "china",
+        "japao",
+        "peru",
+        "brasil",
+        "venezuela"
+    ]
+    let exibir1 = "CADASTRO DE ...\n";
+    nomes.forEach(function (dados, i) {
+        exibir1 += `${i + 1}-${dados}\n`
+    })
+    let exibir2 = "PAISES DE ...\n";
+    paises.forEach(function (dados, i) {
+        exibir2 += `${i + 1}-${dados}\n`
+    })
+    // alert(exibir1+exibir2)
+    function teste() {
+        alert(nomes.join(`\n`) + "\n" + paises.join(`\n`))
+        // ##Resultado da minha function:
+        // pra chamar a funciton e so colocar a frase mais os parenteses que se encontram nela
+        // Exemplo: teste()
+        // aonde eu quero que ela apareça eu irei coloca-la, seja abaixo da sua chave ou abaixo de qualquer outro codigo
+    }
+    function soma() {
+        let v1 = 100;
+        let v2 = 200;
+        let ttl = v1 + v2
+        alert(`a soma de ${v1} + ${v2} é de ${ttl}`)
+        // pra chamar a funciton e so colocar a frase mais os parenteses que se encontram nela
+        // Exemplo: soma()
+        // aonde eu quero que ela apareça eu irei coloca-la, seja abaixo da sua chave ou abaixo de qualquer outro codigo
+    }
+    teste()
+</script>

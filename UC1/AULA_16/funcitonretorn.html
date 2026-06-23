@@ -1,0 +1,30 @@
+<script>
+
+    let nomes = [
+        "paulo lins",
+        "jose iedo",
+        "joao paulo",
+        "ryan",
+        "ronaldo"
+    ]
+    let paises = [
+        "china",
+        "japao",
+        "peru",
+        "brasil",
+        "venezuela"
+    ]
+    function exibirlista(lista1, lista2) {
+        let exibir = "CADASTRO DE ...\n";
+        lista1.forEach(function (dados, i) {
+            exibir += `${i + 1}-${dados}\n`
+        })
+        exibir += "PAISES DE ...\n";
+        lista2.forEach(function (dados, i) {
+            exibir += `${i + 1}-${dados}\n`
+        })
+        // alert(exibir1+exibir2)
+        return exibir
+    }
+    alert(exibirlista(nomes, paises))
+</script>
