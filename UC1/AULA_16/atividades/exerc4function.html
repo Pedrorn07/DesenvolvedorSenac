@@ -1,0 +1,21 @@
+<script>
+
+    let media = Number(prompt("Digite sua media:\n"))
+
+    function verificarSituacao(media) {
+
+        while (!isFinite.media && media < 11) {
+            if (media >= 7) {
+                alert("Media: "+ media + "\nAluno Aprovado")
+            } else if (media >= 5) {
+                alert("Media: "+ media + "\nAluno em Recuperação")
+            } else {
+                alert("Media: "+ media + "\nReprovado")
+            }
+            media = Number(prompt("Digite sua media:\n"))
+        }
+        alert("Media: " + media + "\nNúmero Invalido!!!")
+    }
+    verificarSituacao(media)
+
+</script>

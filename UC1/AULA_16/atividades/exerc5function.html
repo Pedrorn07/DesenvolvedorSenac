@@ -1,0 +1,19 @@
+<script>
+    let custo = Number(prompt("Digite o valor da compra:\n"))
+    let percentual = Number(prompt("Digite o valor do lucro:\n"))
+    function calcularPrecoVenda(custo, percentual) {
+        while (!isFinite.custo && !isFinite.percentual) {
+            if (custo > 0 && percentual >= 0) {
+                let lucro = custo * percentual / 100
+                let precoVenda = custo + lucro
+                let mensagem = `
+                o valor do custo: ${custo}
+                percentual aplicado: ${percentual}`;
+                return mensagem;
+            }
+            custo = Number(prompt("Digite o valor da compra:"))
+            percentual = Number(prompt("Digite o valor do lucro:"))
+        }
+    }
+    alert(calcularPrecoVenda(custo, percentual))
+</script>
