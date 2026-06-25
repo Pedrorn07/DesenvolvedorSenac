@@ -1,0 +1,37 @@
+<script>
+
+    let idade = Number(prompt("Digite sua idade: "))
+ let lista = ["Criança","Adolescente", "Adulto", "Idoso"]
+    function classificarIdade(idade) {
+        let i = 0;
+        while (idade !== 0) {
+            if (isFinite(idade) && idade !== 0 && idade !== "") {
+                if (idade < 0) {
+                    alert(`${idade}\nIdade invalida`)
+
+                } else if (idade < 12) {
+                    alert(`${idade}\n${lista[0]}`)
+
+                } else if (idade < 18) {
+                    alert(`${idade}\n${lista[1]}`)
+
+                } else if (idade < 60) {
+                    alert(`${idade}\n${lista[2]}`)
+
+                } else {
+                    alert(`${idade}\n${lista[3]}`)
+
+                }
+            } else {
+                alert("error")
+                i++
+            }
+            idade = Number(prompt("Digite sua idade novamente"))
+        }
+        alert("Operação cancelada " + idade)
+    }
+    classificarIdade(idade)
+
+
+
+</script>

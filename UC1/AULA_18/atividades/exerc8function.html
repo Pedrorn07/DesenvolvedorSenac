@@ -1,0 +1,30 @@
+<script>
+
+    let vendedor = prompt("Digite o nome do vendedor: ");
+    let valorVendido = Number(prompt("Digite o valor vendido: "));
+    let PercentualDaComissao = Number(prompt("Percentual da comissão foi: "));
+    let resultado = "";
+    function calcularComissao(valorVendido, PercentualDaComissao, vendedor) {
+        while (!isFinite.valorVendido && !isFinite.PercentualDaComissao) {
+            if (valorVendido > 0 && PercentualDaComissao > 0) {
+                let comissao = valorVendido * PercentualDaComissao / 100
+                resultado = `
+                Funcionario: ${vendedor} 
+                valor da venda: ${valorVendido} 
+                Percentual: ${PercentualDaComissao}
+                Comissão a receber: ${comissao}
+                `
+                return resultado
+            } else {
+                resultado = `
+                Dados não informados corretamente!
+                `
+                return resultado
+            }
+            vendedor = prompt("Digite o nome do vendedor: ");
+            valorVendido = Number(prompt("Digite o valor vendido: "));
+            PercentualDaComissao = Number(prompt("Percentual da comissão foi: "));
+        }
+    }
+    alert(calcularComissao(valorVendido, PercentualDaComissao, vendedor));
+</script>

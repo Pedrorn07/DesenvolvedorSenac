@@ -1,7 +1,25 @@
 <script>
 
+    let campo = prompt("**Digite seu nome: ")
+    let status1 = false
 
+    function campoVazio(campo, status1) {
 
+        while (status1 == false) {
 
-    
+            if (campo !== null && campo !== "") {
+                alert("DADOS VALIDOS")
+                status1 = true
+            } else {
+                alert("DADOS INVALIDOS")
+            }
+            if (status1 == false) {
+                campo = prompt("*Digite seu nome: ")
+            } else {
+                alert("Operação finalizada")
+                break
+            }
+        }
+    }
+    campoVazio(campo, status1)
 </script>

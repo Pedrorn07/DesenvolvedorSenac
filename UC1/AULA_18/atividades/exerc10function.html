@@ -1,0 +1,50 @@
+<script>
+    
+let listaProdutos = [];
+function exibirMenu() {
+    let opcao = prompt(
+        "Escolha uma opção:\n" +
+        "1 - Cadastrar produto\n" +
+        "2 - Listar produtos\n" +
+        "0 - Sair"
+    );
+    return opcao;
+}
+function cadastrarProduto() {
+    let novoProduto = prompt("Digite o nome do produto para cadastrar:");
+    if (novoProduto && novoProduto.trim() !== "") {
+        listaProdutos.push(novoProduto.trim()); 
+        alert("Produto '" + novoProduto + "' cadastrado com sucesso!");
+    } else {
+        alert("Cadastro cancelado: Nenhum nome de produto foi digitado.");
+    }
+}
+function listarProduto() {
+    if (listaProdutos.length === 0) {
+        alert("Nenhum produto cadastrado ainda.");
+    } else {
+        alert("Produtos cadastrados:\n" + listaProdutos.join("\n"));
+    }
+}
+function encerrarSistema() {
+    alert("Sistema encerrado.");
+}
+function iniciarSistema() {
+    let continuar = true;
+
+    while (continuar) {
+        let opcao = exibirMenu();
+        if (opcao === "1") {
+            cadastrarProduto();
+        } else if (opcao === "2") {
+            listarProduto();
+        } else if (opcao === "0") {
+            encerrarSistema();
+            continuar = false; 
+        } else {
+            alert("Opção inválida! Tente novamente.");
+        }
+    }
+}
+iniciarSistema();
+</script>
